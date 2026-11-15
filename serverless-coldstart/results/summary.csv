@@ -1,0 +1,6 @@
+metric,value
+Cold (1st req) avg ms,1270.01
+Warm (last req) avg ms,504.98
+Warm (all warm) avg ms,547.59
+Warm (all warm) p95 ms,792.55
+Cold-to-Warm ratio,2.32
