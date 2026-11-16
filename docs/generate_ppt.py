@@ -87,9 +87,9 @@ def create_deck():
     p_grp.font.color.rgb = WHITE
 
     members = [
-        ("Person A (Aalok Thakkar / A-K-0802)", "Backend Architecture, AWS SAM, DynamoDB, CI/CD Pipeline"),
-        ("Person B (Bhagya Thakkar / BM1100)", "Benchmarking Suite, 500-Req Latency Study, CloudWatch Analytics"),
-        ("Person C (Farhan Ansari / FARHAN5826)", "Cost Economics, EC2 Break-Even Model, Documentation & Deliverables")
+        ("Person A: Aalok (A-K-0802)", "Backend & SAM Deploy: Lambda (Python 3.11, 128MB), DynamoDB 'Submissions', API Gateway, CI/CD"),
+        ("Person B: Bhagya (BM1100)", "Benchmark & Analytics: 5x100 matrix, latency.csv, CloudWatch insights, 5 screenshots, PR #1"),
+        ("Person C: Farhan (FARHAN5826)", "Cost Economics & Deliverables: results/cost.xlsx, 10-sec README, 10-slide PPT, PR #2")
     ]
     for mem, role in members:
         pm = tf_team.add_paragraph()

@@ -224,13 +224,42 @@ CloudWatch Logs Insights across 545 production invocations reveals:
 
 ---
 
-## 9. Team Contributions
+## 9. Team Contributions & Summary of Work
 
-| Team Member | Role | Core Technical Contributions |
+### Executive Contributions Overview
+
+| Team Member | Role | Core Technical Ownership & Deliverables |
 | :--- | :--- | :--- |
-| **Aalok Thakkar**<br>([A-K-0802](https://github.com/A-K-0802)) | **Person A** | • Designed cloud backend architecture (API Gateway + Lambda + DynamoDB)<br>• Authored AWS SAM `template.yaml` Infrastructure as Code<br>• Configured GitHub Actions CI/CD automated deployment workflow |
-| **Bhagya Thakkar**<br>([BM1100](https://github.com/BM1100)) | **Person B** | • Engineered 500-request benchmark engine (`benchmark.py`)<br>• Implemented cold-start forcing via environment variable rotation<br>• Extracted CloudWatch Insights telemetry and generated latency plots |
-| **Farhan Ansari**<br>([FARHAN5826](https://github.com/FARHAN5826)) | **Person C** | • Developed cloud unit cost model and EC2 break-even analysis (`cost.xlsx`)<br>• Authored comprehensive repository documentation and architecture diagrams<br>• Built final 10-slide presentation deck (`.pptx`) and technical report |
+| **Aalok**<br>([A-K-0802](https://github.com/A-K-0802)) | **Person A** | • Created Lambda function (Python 3.11, 128 MB memory)<br>• Provisioned DynamoDB table (`Submissions`, On-Demand `PAY_PER_REQUEST`)<br>• Provisioned API Gateway (HTTP API, `POST /submit`)<br>• Deployed to AWS Region `ap-south-1` (Mumbai) via AWS SAM<br>• Configured CI/CD automation in GitHub Actions (`.github/workflows/deploy.yml`) |
+| **Bhagya**<br>([BM1100](https://github.com/BM1100)) | **Person B** | • Created benchmark suite (`benchmark/benchmark.py` & `benchmark/analyze.py`)<br>• Executed 5 rounds of 100 requests (500 total) forcing cold starts between rounds<br>• Generated `results/latency.csv`, `results/summary.csv`, and `results/latency_graph.png`<br>• Built `results/latency_analysis.xlsx` with Raw data, Summary sheets, and charts<br>• Queried CloudWatch Logs Insights and dumped logs to `results/cloudwatch_reports.txt`<br>• Captured all 5 required verification screenshots in `results/screenshots/`<br>• Submitted deliverables via branch `feature/benchmark` (PR #1) |
+| **Farhan**<br>([FARHAN5826](https://github.com/FARHAN5826)) | **Person C** | • Built comprehensive cloud unit cost model & break-even analysis (`results/cost.xlsx`)<br>• Engineered automated cost generator script (`docs/make_cost.py`)<br>• Authored comprehensive 10-section `README.md` with Mermaid architecture diagram<br>• Developed professional 10-slide PowerPoint presentation (`docs/Cloud_Computing_Group_50_Presentation.pptx`)<br>• Wrote presentation speaker notes (`docs/presentation.md`) & technical report (`docs/final_report.md`)<br>• Submitted deliverables via branch `docs/readme-cost` (PR #2) |
+
+### Detailed Summary of Completed Tasks
+
+#### [✔] Person A (Backend & Deployment):
+- **Lambda Function**: Python 3.11 handler allocated 128 MB memory.
+- **DynamoDB Table**: `Submissions` table with On-Demand `PAY_PER_REQUEST` billing.
+- **API Gateway**: HTTP API with `POST /submit` integration.
+- **AWS Region**: Deployed in `ap-south-1` (Mumbai) via AWS SAM.
+- **CI/CD Pipeline**: GitHub Actions workflow at `.github/workflows/deploy.yml`.
+- **Live Production URL**: `https://w3obh27tnh.execute-api.ap-south-1.amazonaws.com/submit`
+
+#### [✔] Person B (Benchmarking & Latency Analysis):
+- **Benchmark Suite**: Authored `benchmark/benchmark.py` and `benchmark/analyze.py`.
+- **Execution Matrix**: Ran 5 rounds of 100 requests (500 total) forcing cold starts between rounds.
+- **Data Deliverables**: Generated `results/latency.csv`, `results/summary.csv`, and `results/latency_graph.png`.
+- **Spreadsheet Analytics**: Built `results/latency_analysis.xlsx` with Raw data & Summary sheets and charts.
+- **CloudWatch Insights**: Analyzed 545 invocations and saved logs to `results/cloudwatch_reports.txt`.
+- **Visual Proof**: Captured all 5 required screenshots in `results/screenshots/`.
+- **Branch**: Pushed and merged via `feature/benchmark`.
+
+#### [✔] Person C (Farhan - Cost Economics, Documentation & Presentation):
+- **Cost Analysis Spreadsheet**: Generated `results/cost.xlsx` with Billed Duration (33.39 ms), unit service rates, and EC2 comparison.
+- **Automated Generator**: Created `docs/make_cost.py` for reproducible cost modeling.
+- **System Documentation**: Authored complete 10-section `README.md` with GitHub-native Mermaid flowchart.
+- **Slide Deck (PPT)**: Built 10-slide PowerPoint deck `docs/Cloud_Computing_Group_50_Presentation.pptx` with embedded latency chart.
+- **Presentation & Academic Report**: Authored `docs/presentation.md` (speaker notes) and `docs/final_report.md`.
+- **Branch & Pull Request**: Submitted via `docs/readme-cost` as PR #2.
 
 ---
 

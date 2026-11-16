@@ -11,9 +11,9 @@
 - **Subtitle**: Theme 4: Serverless & Startups — Production Benchmarking & Cloud Economics
 - **Group**: Project Group 50 | Partner Track: Freshworks Case Study
 - **Team Members & Responsibilities**:
-  - **Person A (Aalok Thakkar / A-K-0802)**: Backend Architecture, DynamoDB Schema, API Gateway Configuration, AWS SAM Template, CI/CD Pipeline.
-  - **Person B (Bhagya Thakkar / BM1100)**: Benchmarking Suite, 500-Request Latency Matrix, CloudWatch Insights Analytics, Latency Plots.
-  - **Person C (Farhan Ansari / FARHAN5826)**: Cost Analysis Spreadsheet, EC2 Break-Even Economics, Technical Documentation, Final Presentation & Report.
+  - **Person A (Aalok / A-K-0802)**: Backend & Deployment (Lambda Python 3.11 128MB, DynamoDB 'Submissions', API Gateway, ap-south-1 SAM & GitHub Actions CI/CD).
+  - **Person B (Bhagya / BM1100)**: Benchmarking & Latency Analysis (500-req matrix, latency.csv, summary.csv, latency_graph.png, CloudWatch insights, 5 screenshots, PR #1).
+  - **Person C (Farhan / FARHAN5826)**: Cost Economics & Deliverables (results/cost.xlsx, 10-section README, 10-slide PowerPoint presentation, PR #2).
 
 > **Speaker Notes**:  
 > "Good morning everyone. We are Group 50 presenting our project on Serverless Cold Starts and Cost Analysis for startups, inspired by real-world engineering challenges at scale such as Freshworks and Shaadi.com. In this presentation, we will walk you through our live AWS deployment, our empirical 500-request benchmark, our CloudWatch internal telemetry breakdown, and our comprehensive cost model comparing serverless to always-on EC2 instances."

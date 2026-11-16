@@ -4,9 +4,9 @@
 **Group**: Group 50  
 **Case Study**: Theme 4 — Serverless & Startups (Freshworks Case Study)  
 **Authors**:
-- **Aalok Thakkar** (`A-K-0802`) — Person A: Infrastructure, SAM & CI/CD
-- **Bhagya Thakkar** (`BM1100`) — Person B: Benchmarking Suite & CloudWatch Analytics
-- **Farhan Ansari** (`FARHAN5826`) — Person C: Cost Modeling, Architecture Documentation & Final Deliverables
+- **Aalok** (`A-K-0802`) — Person A: Backend Architecture, SAM & CI/CD
+- **Bhagya** (`BM1100`) — Person B: Benchmarking Suite & CloudWatch Analytics
+- **Farhan** (`FARHAN5826`) — Person C: Cost Modeling, Architecture Documentation & Final Deliverables
 
 ---
 
